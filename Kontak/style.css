@@ -1,0 +1,210 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    color: #1D242B;
+    overflow-x  : hidden;
+  }
+  
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0077C0;
+    color: #FAFAFA;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  /* Logo Styles */
+
+
+
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FAFAFA;
+}
+
+
+
+  nav div span {
+    display: inline;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+  }
+  
+  nav ul li a {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+  }
+
+
+  nav ul li a:hover {
+    background-color: #C7EEFF;
+    padding: 10px 15px;
+    color: #1D242B;
+    transition: 0.5s ease-in-out  ;
+  }
+
+  .icon-nav {
+    font-size: 24px;
+    display: none;
+    color: white;
+  }
+
+
+/* === Kontak Guru Grid === */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .teacher-list h2, 
+  .school-map h2 {
+    color: #1D242B;
+    border-bottom: 2px solid #0077C0;
+    padding-bottom: 10px;
+  }
+  
+  .teachers-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .teacher-card {
+    background: #FAFAFA;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 4px solid #0077C0;
+  }
+  
+  /* === Peta Sekolah === */
+  .school-map {
+    background: #FAFAFA;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .map-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+  
+  /* === Foto Sekolah === */
+  .school-photo {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .school-photo img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* === Form Kontak === */
+  .contact-form {
+    background: #C7EEFF;
+    padding: 30px 20px;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  .contact-form h2 {
+    color: #1D242B;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form {
+    display: grid;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input, 
+  .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #0077C0;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background: #0077C0;
+    color: #FAFAFA;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 7rem;
+    background-color: #1D242B;
+    color: #FAFAFA;
+  }
+  
+
+  footer .social-media  {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .icon-medsos {
+    display: flex;
+    align-items: center;
+  }
+
+  .social-media .icon-medsos a {
+    color: #FAFAFA;
+    text-decoration: none;
+  }
+
+  .social-media .icon-medsos i {
+    color: #FAFAFA;
+    font-size: 50px;
+    margin-right: 20px;
+    margin-left: 10px;
+
+  }

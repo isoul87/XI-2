@@ -1,0 +1,215 @@
+/* Gallery Intro */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFA;
+  color: #1D242B;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0077C0;
+  color: #FAFAFA;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index: 20;
+}
+
+/* Logo Styles */
+
+
+
+.logo-text {
+font-family: 'Poppins', sans-serif;
+font-size: 2rem;
+font-weight: bold;
+color: #FAFAFA;
+}
+
+
+
+nav div span {
+  display: inline;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: #FAFAFA;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+
+nav ul li a:hover {
+  background-color: #C7EEFF;
+  padding: 10px 15px;
+  color: #1D242B;
+  transition: 0.5s ease-in-out  ;
+}
+
+.btn-login {
+  background-color: #C7EEFF;
+  color: #1D242B;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #C7EEFF;
+}
+
+.gallery-intro{
+  margin-top: 90px;
+}
+
+section  {
+  margin-bottom: 12rem;
+}
+
+.gallery-grid {
+  margin-top: 20rem;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.main p {
+  text-align: center;
+  margin-top: -20px;
+}
+
+.direction {
+  color: #1D242B;
+  text-decoration: none;
+}
+
+#arrow {
+  margin-top: 4rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+#arrow img {
+  top: 20px;
+  animation: bounce 1s infinite ease-in-out;
+  position: absolute;
+}
+
+.gallery-intro {
+  display: flex;
+  padding: 32px 64px;
+
+}
+
+.gallery-intro img{
+  width: 100%;
+}
+
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(29, 36, 43, 0.8);
+  color: #FAFAFA;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 7rem;
+  background-color: #1D242B;
+  color: #FAFAFA;
+}
+
+
+footer .social-media  {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon-medsos {
+  display: flex;
+  align-items: center;
+}
+
+.social-media .icon-medsos a {
+  color: #FAFAFA;
+    text-decoration: none;
+  }
+  
+  .social-media .icon-medsos i {
+    color: #FAFAFA;
+    font-size: 50px;
+    margin-right: 20px;
+    margin-left: 10px;
+    
+  }
+  @keyframes bounce {
+      
+    
+    0%{
+      margin-top: 50px;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 50px;
+    }
+  }
